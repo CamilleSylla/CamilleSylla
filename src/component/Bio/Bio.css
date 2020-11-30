@@ -1,0 +1,12 @@
+.bioContainer {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 80%;
+}
+.titleContainer {
+    position: relative;
+    height: 10vh;
+    overflow: hidden;
+}

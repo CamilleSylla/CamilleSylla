@@ -1,0 +1,26 @@
+.navContainer {
+    height: 80vh;
+    width: 15vw;
+    position:fixed;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    top: 0;
+    right: 0;
+  }
+  .navContainer a {
+    color: white;
+    text-decoration: none;
+  }
+
+  .navList{
+    display: flex;
+    letter-spacing: 0.5vw;
+    font-family: 'Barlow Condensed', sans-serif;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 20%;
+    font-size: 1.5vw;
+    font-weight: 500;
+  }

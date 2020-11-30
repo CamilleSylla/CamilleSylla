@@ -1,0 +1,25 @@
+.socialContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    border-bottom: 1px solid transparent;
+    min-height: 6vh;
+    transition: all 0.8s ease;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    z-index: 2;
+}
+.socialContainer:hover {
+    border-bottom: 1px solid white;
+}
+.socialIcons {
+    width: 30%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.socialContainer img {
+    height: 3.5vh;
+    cursor: pointer;
+}

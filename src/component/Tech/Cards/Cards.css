@@ -1,0 +1,62 @@
+.techcontainer {
+    width: 80vw;
+}
+
+.stackMenu {
+    display: flex;
+    width: 50%;
+    margin-bottom: 10vh;
+}
+
+.techFront {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 10vh;
+}
+
+.techSplice p{
+    color: white;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 3vw;
+}
+
+.card {
+    color: white;
+    font-family: 'Barlow Condensed', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-height: 8vh;
+    min-width: 15vw;
+}
+.card h3 {
+    font-weight: 400;
+    font-size: 1.5vw;
+    letter-spacing: 0.3vw;
+    margin: 0;
+}
+.card img {
+    height: 8vh;
+    margin-bottom: 1vh;
+}
+
+
+.card2 {
+    color: white;
+    font-family: 'Barlow Condensed', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.card2 h3 {
+    font-weight: 400;
+    font-size: 1.5vw;
+    letter-spacing: 0.3vw;
+    margin: 0;
+}
+.card2 img {
+    height: 6vh;
+    margin-bottom: 1vh;
+}

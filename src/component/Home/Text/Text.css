@@ -1,0 +1,28 @@
+.textContainer {
+    width: 100%;
+    grid-row: 2;
+    color: white;
+    font-family: 'Barlow Condensed', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.textContainer span{
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 3vw;
+}
+.textContainer h3 {
+    text-align: center;
+    margin: 0;
+    font-size: 8vw;
+}
+.textTitle {
+    display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+}
+.textContainer p {
+    text-align: justify;
+}
