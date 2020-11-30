@@ -1,5 +1,4 @@
 import React from 'react'
-import Tech from '../Tech/Tech'
 import './Home.css'
 import Text from './Text/Text'
 import Title from './Title/Title'

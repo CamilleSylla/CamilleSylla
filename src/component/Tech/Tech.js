@@ -5,12 +5,13 @@ import TechTitle from './Title/Title';
 
 export default function Tech() {
     const [stack, setStack] = useState({
-        stack: "back"
+        stack: "front"
     })
 
     const StackClick = (e) => {
         setStack({...stack, stack: e.target.value})
     }
+
 
 
     return (

@@ -1,0 +1,30 @@
+.formcontainer {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    grid-column: span 4;
+}
+
+.formInputs {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.formInputs input,
+textarea {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 1vw;
+    font-family: 'Barlow Condensed', sans-serif;
+    border-bottom: 2px solid white;
+
+}
+
+.formInputs input {
+    height: 5vh;
+}

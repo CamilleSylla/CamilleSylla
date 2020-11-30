@@ -16,7 +16,9 @@ export default function Nav() {
                 <NavLink to="/bio" exact activeStyle={{color: "#A81549"}}>
                 03 - Bio
                 </NavLink>
-                <a>04-Contact</a>
+                <NavLink to="/contact" exact activeStyle={{color: "#A81549"}}>
+                04 - Contact
+                </NavLink>
             </div>
         </div>
     )
