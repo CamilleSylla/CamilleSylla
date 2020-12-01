@@ -1,5 +1,14 @@
 .homeGrid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     width: 80%;
+}
+#scene {
+    margin-bottom: -10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    width: 80vh;
+    opacity: 1;
 }

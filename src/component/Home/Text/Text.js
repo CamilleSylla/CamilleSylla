@@ -1,7 +1,6 @@
 import React, { useEffect, useRef } from 'react'
 import './Text.css'
 import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/all";
 import CountUp from 'react-countup';
 
 export default function Text () {
@@ -9,15 +8,15 @@ export default function Text () {
 
     useEffect(() => {
         gsap.from(".textContainer", 1.2, {
-            delay:1,
+            delay:.3,
             ease: "power3.out",
             color: "transparent",
             stagger: {
                 amount:1
             }
         })
-        gsap.from("#desc", 1.5, {
-            delay:1.2,
+        gsap.from("#desc", 1.2, {
+            delay:.3,
             ease: "power3.out",
             x: -1000,
             height: 50,
@@ -26,7 +25,7 @@ export default function Text () {
             }
         })
         gsap.from(".linkBtn", 1.2, {
-            delay: 1.4,
+            delay: .3,
             ease:"back",
             width: "10%",
             rotateX: 1800,

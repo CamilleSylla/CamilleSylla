@@ -8,15 +8,15 @@ extend({ OrbitControls })
 const Light = () => {
     return (
         <>
-            <ambientLight intensity={0.8} color="#FFCD99"/>
-            <directionalLight position={[-250, 10, 5]} intensity={0.8} />
-            <spotLight position={[-1000, 250, 20]} color="#30106B" intensity={10} />
+            <ambientLight intensity={0.8} />
+            <directionalLight position={[-250, 10, 5]} intensity={0.3} />
+            <spotLight position={[-1000, 250, 20]} color="#30106B" intensity={3} />
         </>
 
     )
 }
 const CameraControls = (event) => {
-    const { camera, gl: { domElement }} = useThree();
+    const { camera, gl: { domElement }, } = useThree();
     
     const controls = useRef();
     useFrame((state) => controls.current.update());
@@ -24,8 +24,8 @@ const CameraControls = (event) => {
 };
 
 const Model = () => {
-    const gltf = useGLTFLoader('/computer/scene.gltf', true);
-    return <primitive  object={gltf.scene} dispose={null}/>;
+    const gltf = useGLTFLoader('/me.gltf', true);
+    return <primitive object={gltf.scene} dispose={null} />;
 }
 
 export default function Scene() {
@@ -35,7 +35,7 @@ export default function Scene() {
     return (
 
         <>
-            <Canvas colorManagement camera={{ position: [150 / 2, 100 / 2, 175], fov: 100}} >
+            <Canvas colorManagement camera={{ position: [0, 0, 10], fov: 16 }} >
                 <CameraControls />
                 <Light />
                 <Suspense fallback={null}>
