@@ -2,13 +2,50 @@ import React, { useEffect, useRef } from 'react'
 import './Text.css'
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/all";
+import CountUp from 'react-countup';
 
 export default function Text () {
+    
 
+    useEffect(() => {
+        gsap.from(".textContainer", 1.2, {
+            delay:1,
+            ease: "power3.out",
+            color: "transparent",
+            stagger: {
+                amount:1
+            }
+        })
+        gsap.from("#desc", 1.5, {
+            delay:1.2,
+            ease: "power3.out",
+            x: -1000,
+            height: 50,
+            stagger: {
+                amount:1
+            }
+        })
+        gsap.from(".linkBtn", 1.2, {
+            delay: 1.4,
+            ease:"back",
+            width: "10%",
+            rotateX: 1800,
+            color: "transparent",
+            stagger: {
+                amount:1
+            }
+        })
+    })
     return (
         
+        
         <div className="textContainer">
-            <h3>01</h3>
+            
+            <h3>0<CountUp
+            start={9}
+            end={1}>
+
+            </CountUp></h3>
             <div className="textTitle">
             <span>D</span>
             <span>o</span>
@@ -34,9 +71,9 @@ export default function Text () {
             <span>s</span>
             </div>
             
-            <p >Bonjour, Je m'appelle Camille Sylla.
+            <p id="desc">Bonjour, Je m'appelle Camille Sylla.
                  Je suis un developpeur utilisant ayant pour stack favoris le " MERN (MongoDB, Express.js, React.js et Node.js) Stack". Je suis developpeur freelance pouvant intervenir dans les region des Haut-de-France, Ile de France et Grand-Ouest mais aussi en remote si vous n'avez pas ou pas encore de locaux.</p>
-            <button> Ma Bio</button>
+            <button className="linkBtn"> Ma Bio</button>
         </div>
     )
 }

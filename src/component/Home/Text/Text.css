@@ -18,6 +18,11 @@
     margin: 0;
     font-size: 8vw;
 }
+.textContainer h3 span {
+    text-align: center;
+    margin: 0;
+    font-size: 8vw;
+}
 .textTitle {
     display: flex;
    flex-direction: row;

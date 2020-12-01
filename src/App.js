@@ -6,7 +6,10 @@ import Home from './component/Home/Home';
 import Nav from './component/Nav/Nav';
 import Social from './component/Social/Social';
 import Tech from './component/Tech/Tech';
-
+import {
+  CSSTransition,
+  TransitionGroup,
+} from 'react-transition-group';
 
 function App() {
   return (
@@ -15,15 +18,14 @@ function App() {
         <Nav />
         <Social />
         <Route render={({ location }) => (
-          <Switch location={location}>
-            <Route path="/" exact component={Home}/>
-            <Route path="/bio"  component={Bio}/>
-            <Route path="/technos"  component={Tech}/>
-            <Route path="/contact"  component={Contact}/>
-          </Switch>
+          
+              <Switch location={location}>
+                <Route path="/" exact component={Home} />
+                <Route path="/bio" component={Bio} />
+                <Route path="/technos" component={Tech} />
+                <Route path="/contact" component={Contact} />
+              </Switch>
         )} />
-
-
       </div>
     </div>
   );
