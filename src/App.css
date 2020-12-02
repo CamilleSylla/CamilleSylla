@@ -47,4 +47,10 @@ button {
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  transition: all ease-out .5s;
+  margin-right: 2vw;
+}
+button:focus {
+  border: 3px solid #A81549;
+  color: #A81549;
 }

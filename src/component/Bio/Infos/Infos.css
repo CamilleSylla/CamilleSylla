@@ -9,12 +9,18 @@
 .infosContainer img {
     width: 5vw;
 }
-
+.infoStuff {
+    width: 100%;
+}
 .infosItems {
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: column;
+    justify-content: space-between;
     width: 100%;
 }
 .infosItems img {
     width: 2.3vw;
+}
+.infosImg {
+    opacity: 1;
 }

@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react'
+import React, { useEffect} from 'react'
 import './Text.css'
 import { gsap } from "gsap";
 import CountUp from 'react-countup';
@@ -25,9 +25,9 @@ export default function Text () {
             }
         })
         gsap.from(".linkBtn", 1.2, {
-            delay: .3,
+            delay: 1.5,
             ease:"back",
-            width: "10%",
+            width: "0%",
             rotateX: 1800,
             color: "transparent",
             stagger: {
