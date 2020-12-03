@@ -17,6 +17,7 @@ import Jest from '../../../assets/jest.svg'
 import Exp from '../../../assets/express.svg'
 import Jwt from '../../../assets/jwt.svg'
 import Wp from '../../../assets/WP.svg'
+import Up from '../../../assets/up.svg'
 
 export default function Cards({ stack }) {
 
@@ -92,7 +93,13 @@ export default function Cards({ stack }) {
                 </div>
             )
         } else {
-            return <p> Veuillez selectionnez une catégorie</p>
+            return (
+                <div className="techSelect">
+                    <img src={Up} alt="up arrow"/>
+                    <p id="select"> Veuillez selectionnez une catégorie</p>
+                </div>
+
+            ) 
         }
     }
     return (

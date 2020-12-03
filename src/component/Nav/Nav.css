@@ -8,6 +8,7 @@
     justify-content: center;
     top: 0;
     right: 0;
+    z-index: 2;
   }
   .navContainer a {
     color: white;

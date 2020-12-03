@@ -3,11 +3,9 @@
     width: 100vw;
     background: url(../../assets/tech.jpg);
     background-size: cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    
 }
+
 #back{
     opacity: 1;
 }

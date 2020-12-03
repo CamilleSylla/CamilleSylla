@@ -49,7 +49,11 @@ export default function Scene() {
 
 
         const controls = useRef();
-        useFrame((state) => controls.current.update());
+        useFrame((state) => {
+            if (controls.current !== null){
+                controls.current.update()
+            }
+        });
         return <orbitControls ref={controls} args={[camera, domElement]} />;
     };
 

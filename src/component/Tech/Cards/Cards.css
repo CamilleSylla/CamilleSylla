@@ -1,5 +1,11 @@
-.techcontainer {
+.techContainer {
     width: 80vw;
+    min-height: 30vh;
+}
+
+#select{
+    font-size: 2vw;
+    color: white;
 }
 
 .stackMenu {
@@ -36,7 +42,7 @@
     letter-spacing: 0.3vw;
     margin: 0;
 }
-.card img {
+.techContainer img {
     height: 8vh;
     margin-bottom: 1vh;
 }
@@ -59,4 +65,21 @@
 .card2 img {
     height: 6vh;
     margin-bottom: 1vh;
+}
+
+.techSelect {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.techSelect img {
+    animation: updown 1.2s infinite;
+    position: relative;
+}
+
+@keyframes updown {
+    from {top: 10px;}
+  to {top: 0px;}
 }

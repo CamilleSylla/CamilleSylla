@@ -19,7 +19,8 @@ const CameraControls = (event) => {
     const { camera, gl: { domElement }} = useThree();
     
     const controls = useRef();
-    useFrame((state) => controls.current.update());
+    useFrame( (state) =>  controls.current.update());
+    
     return <orbitControls ref={controls} args={[camera, domElement]} />;
 };
 
