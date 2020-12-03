@@ -6,6 +6,7 @@
 #select{
     font-size: 2vw;
     color: white;
+    font-family: 'Barlow Condensed', sans-serif;
 }
 
 .stackMenu {
@@ -75,11 +76,11 @@
 }
 
 .techSelect img {
-    animation: updown 1.2s infinite;
+    animation: updown 1.5s infinite;
     position: relative;
 }
 
 @keyframes updown {
-    from {top: 10px;}
+    from {top: 20px;}
   to {top: 0px;}
 }
