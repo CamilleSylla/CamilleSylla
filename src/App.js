@@ -7,6 +7,7 @@ import Nav from './component/Nav/Nav';
 import Social from './component/Social/Social';
 import Tech from './component/Tech/Tech';
 import { AnimatePresence} from "framer-motion"
+import Project from './component/Projects/Project';
 
 function App() {
   const location = useLocation
@@ -20,6 +21,7 @@ function App() {
             <Switch location={location} key={location.pathname}>
               <Route path="/" exact component={Home} />
               <Route path="/bio" component={Bio} />
+              <Route path="/projects" component={Project} />
               <Route path="/technos" component={Tech} />
               <Route path="/contact" component={Contact} />
             </Switch>

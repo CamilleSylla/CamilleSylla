@@ -1,0 +1,63 @@
+.projectCards {
+    width: 80vw;
+    display: grid;
+    min-height: 50vh;
+    max-height: 60vh;
+    grid-template-columns: 3fr 3fr 2fr;
+    column-gap: 2%;
+    color: white;
+    font-family: 'Barlow Condensed', sans-serif;
+    transition: all 0.5s ease-in;
+}
+.projectCards:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.projetViews img{
+    width: 100%;
+}
+.projetViews p {
+    width: 100%;
+    text-align: left;
+}
+.projetViews p span{
+    float: right;
+}
+.projectDetails li {
+    margin-left: 2vw;
+}
+.projectTechnos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.projectDone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.projectDone img {
+    width: 5vw;
+}
+.projectDone a {
+    width: 100%;
+    cursor: pointer;
+    text-align: center;
+}
+.projectDone p {
+    width: 100%;
+    text-align: center;
+}
+.projetMarteau {
+    animation: Mart 1s linear infinite;
+    position: relative;
+}
+
+
+@keyframes Mart {
+    from{
+      transform: rotate(90deg)
+    }
+    to {transform: rotate(0deg)
+    }
+  }	

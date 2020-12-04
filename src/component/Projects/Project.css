@@ -1,0 +1,28 @@
+.projectContainer {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url(../../assets/projet.jpg);
+    background-size: cover;
+}
+.selector img {
+    width: 2vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+.selector{
+    display: flex;
+    color: white;
+    width: 50vw;
+    justify-content: space-between;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+.selector div {
+    display: flex;
+}
+#arrLeft img{
+    transform: rotate(180deg);
+}

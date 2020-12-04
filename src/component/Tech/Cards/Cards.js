@@ -18,8 +18,23 @@ import Exp from '../../../assets/express.svg'
 import Jwt from '../../../assets/jwt.svg'
 import Wp from '../../../assets/WP.svg'
 import Up from '../../../assets/up.svg'
+import { motion } from 'framer-motion';
 
 export default function Cards({ stack }) {
+
+    const pageTransition = {
+        ini: {
+            y: 0,
+            x: 0
+        },
+        out: {
+            y: "100vw"
+        },
+        in: {
+            y: "-100v"
+        }
+
+    }
 
     function Stack() {
         if (stack.stack === "back") {

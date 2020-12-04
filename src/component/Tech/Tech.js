@@ -1,5 +1,5 @@
 
-import { motion } from 'framer-motion';
+import { AnimatePresence, motion } from 'framer-motion';
 import React, { useState } from 'react';
 import Cards from './Cards/Cards';
 import './Tech.css';
@@ -14,7 +14,7 @@ export default function Tech() {
         setStack({ ...stack, stack: e.target.value })
     }
 
-    const pageTransition = {
+    const pageVariant = {
         ini: {
             y: 0,
             x: 0
@@ -27,13 +27,23 @@ export default function Tech() {
         }
 
     }
+    const pageTransition = {
+        type: "tween",
+        ease:"anticipate",
+        duration: .5
+    }
+    const pageStyle = {
+        pposition: "absolute"
+    }
 
     return (
         <motion.div
             exit="out"
             initial="in"
             animate="ini"
-            variants={pageTransition}>
+            variants={pageVariant}
+            transition={pageTransition}
+            style={pageStyle}>
             <div className="appTech">
                 <div className="layer">
                     <TechTitle />

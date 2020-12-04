@@ -1,6 +1,6 @@
 .homeGrid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr 2fr;
     width: 80%;
 }
 #scene {
@@ -11,4 +11,7 @@
     height: 60vh;
     width: 80vh;
     opacity: 1;
+}
+#scene img {
+    height: 60vh;
 }

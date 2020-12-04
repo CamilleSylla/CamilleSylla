@@ -24,7 +24,7 @@ export default function Scene() {
             <>
                 <ambientLight intensity={0.8} />
                 <directionalLight position={[-250, 10, 5]} intensity={0.3} />
-                <spotLight position={[-1000, 250, 20]} color="#30106B" intensity={3} />
+                <spotLight position={[-500, 100, -200]} color="#15F4EE" intensity={1.5} />
             </>
 
         )

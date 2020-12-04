@@ -15,7 +15,7 @@ export default function Infos() {
         })
         gsap.from(".infosDesc", 0.8, {
             delay: 1.6,
-            x: 1000
+            x: 2000
         })
     })
 

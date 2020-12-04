@@ -78,6 +78,7 @@
 .techSelect img {
     animation: updown 1.5s infinite;
     position: relative;
+    
 }
 
 @keyframes updown {

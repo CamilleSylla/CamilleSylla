@@ -5,24 +5,33 @@ import Text from './Text/Text'
 import Title from './Title/Title'
 import { gsap } from "gsap";
 import { motion } from "framer-motion"
-
+import Dev from '../../assets/dev.svg'
 
 
 export default function Home() {
-    const Comp =React.lazy(() => import ('./Scene/Scene'))
-    const pageTransition = {
+    const Comp = React.lazy(() => import('./Scene/Scene'))
+    const pageVariant = {
         ini: {
             y: 0,
-            x: 0
+            x: 0,
+            opacity: 1
         },
         out: {
             y: "100vh"
         },
         in: {
-            x: "-100vw"
+            opacity: 0
         }
     }
+    const pageTransition = {
+        type: "tween",
+        ease:"anticipate",
+        duration: .5
 
+    }
+    const pageStyle = {
+        pposition: "absolute"
+    }
     useEffect(() => {
         gsap.from("#scene", 1.8, {
             x: 1000,
@@ -34,25 +43,28 @@ export default function Home() {
         })
     })
     return (
-        <motion.div  
-        exit="out"
-        initial="in" 
-        animate="ini"
-        variants={pageTransition}>
+        <Suspense fallback={<div>Loading...</div>}>
+        <motion.div
+            exit="out"
+            initial="in"
+            animate="ini"
+            variants={pageVariant}
+            transition={pageTransition}
+            style={pageStyle}>
             <div className="appHome">
                 <div className="layer">
                     <div className="homeGrid">
                         <Title />
                         <Text />
                         <div id="scene">
-                        <Suspense fallback={<div>Loading...</div>}>
-                            <Comp/>
-                            </Suspense>
+                            <img src={Dev} alt="dev"/>
+                            
                         </div>
                     </div>
                 </div>
             </div>
         </motion.div>
+        </Suspense>
 
 
     )

@@ -19,7 +19,7 @@ export default function Bio() {
             }
         })
     })
-    const pageTransition = {
+    const pageVariant = {
         ini: {
             y: 0,
             x: 0
@@ -31,13 +31,23 @@ export default function Bio() {
             x: "-100vw"
         }
     }
+    const pageTransition = {
+        type: "tween",
+        ease:"anticipate",
+        duration: .5
+    }
+    const pageStyle = {
+        pposition: "absolute"
+    }
 
     return (
         <motion.div  
         exit="out"
         initial="in" 
         animate="ini"
-        variants={pageTransition}>
+        variants={pageVariant}
+        transition={pageTransition}
+        >
         <div className="appBio">
             <div className="layer">
 
