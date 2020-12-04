@@ -40,7 +40,6 @@ export default function Scene() {
         function onMouseUpdate(e) {
             x = e.pageX;
             y = e.pageY;
-            console.log(x, y);
             if (camera.position !== undefined) {
                 camera.position.set((-x + 650) / 100, (y + -500) / 100, 10)
             }

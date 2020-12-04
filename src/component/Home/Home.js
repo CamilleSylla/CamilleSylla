@@ -1,21 +1,27 @@
-import React, { useEffect } from 'react'
+import React, { Suspense, useEffect } from 'react'
 import './Home.css'
-import Scene from './Scene/Scene'
+
 import Text from './Text/Text'
 import Title from './Title/Title'
 import { gsap } from "gsap";
 import { motion } from "framer-motion"
 
 
-const pageTransition = {
-    in: {
-        y:0
-    },
-    out: {
-        y: "-100vh"
-    }
-}
+
 export default function Home() {
+    const Comp =React.lazy(() => import ('./Scene/Scene'))
+    const pageTransition = {
+        ini: {
+            y: 0,
+            x: 0
+        },
+        out: {
+            y: "100vh"
+        },
+        in: {
+            x: "-100vw"
+        }
+    }
 
     useEffect(() => {
         gsap.from("#scene", 1.8, {
@@ -27,21 +33,21 @@ export default function Home() {
             }
         })
     })
-
-    
     return (
         <motion.div  
         exit="out"
-        initial="out" 
-        animate="in"
-        variant={pageTransition}>
+        initial="in" 
+        animate="ini"
+        variants={pageTransition}>
             <div className="appHome">
                 <div className="layer">
                     <div className="homeGrid">
                         <Title />
                         <Text />
                         <div id="scene">
-                            <Scene />
+                        <Suspense fallback={<div>Loading...</div>}>
+                            <Comp/>
+                            </Suspense>
                         </div>
                     </div>
                 </div>
