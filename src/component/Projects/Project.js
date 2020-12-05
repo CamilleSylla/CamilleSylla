@@ -94,6 +94,7 @@ export default function Project() {
                             <img src={Arr} alt="left" />
                             <p>Projet précedent</p>
                         </div>
+    {pro.map((name) => {return <p>{name.name}</p>})}
                         <div id="arrRight" onClick={add}>
                             <p>Projet suivant</p>
                             <img src={Arr} alt="left" />
