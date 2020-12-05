@@ -53,6 +53,10 @@ button:focus {
   border: 3px solid #A81549;
   color: #A81549;
 }
+button:hover {
+  border: 3px solid rgb(18, 34, 39);
+  color: rgb(18, 34, 39);
+}
 .layer {
   height: 100vh;
   width: 100vw;
