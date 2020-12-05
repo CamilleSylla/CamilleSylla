@@ -18,6 +18,7 @@
     display: flex;
     color: white;
     width: 50vw;
+    margin-top: 3vh;
     justify-content: space-between;
     font-family: 'Barlow Condensed', sans-serif;
 }

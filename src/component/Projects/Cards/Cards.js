@@ -5,10 +5,7 @@ import './Cards.css';
 import Check from '../../../assets/check.svg'
 import Mar from '../../../assets/tenderizer.svg'
 
-export default function Cards({project, setProject , Projects}) {
-    
-   
-    const pro = Projects.filter(el => el.id === project.id)
+export default function Cards({pro}) {
 
     return (
         <div className="projectCards">

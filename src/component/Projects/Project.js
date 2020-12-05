@@ -76,7 +76,7 @@ export default function Project() {
             image: Ecom
         },
     ]
-
+    const pro = Projects.filter(el => el.id === project.id)
     return (
         <motion.div
             exit="out"
@@ -88,7 +88,7 @@ export default function Project() {
             <div className="projectContainer">
                 <div className="layer">
                     <Title />
-                    <Cards Projects={Projects} project={project} setProject={setProject} />
+                    <Cards pro={pro} />
                     <div className="selector">
                         <div id="arrLeft" onClick={minus}>
                             <img src={Arr} alt="left" />
