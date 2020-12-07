@@ -20,7 +20,7 @@ export default function Title () {
     return (
         
         <div className="titleContainer">
-            <h2 ref={el => line1 = el}>Developpeur Full Stack</h2>
+            <h2 ref={el => line1 = el}>Developpeur Web Polyvalent</h2>
             <h1 ref={el => line2 = el}>Camille Sylla</h1>
         </div>
     )
