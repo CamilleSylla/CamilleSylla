@@ -64,4 +64,20 @@
     }
   }	
 
-  
+  @media(max-device-width: 568px) {
+    .projectCards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .proInfo {
+        font-size: 2.5vw;
+    }
+    .projectTechnos {
+        font-size: 2vw;
+    }
+    .projectDone {
+        font-size: 2.5vw;
+    }
+}

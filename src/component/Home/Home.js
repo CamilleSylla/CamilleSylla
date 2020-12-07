@@ -55,10 +55,11 @@ export default function Home() {
                 <div className="layer">
                     <div className="homeGrid">
                         <Title />
-                        <Text />
                         <div id="scene">
                             <img src={Dev} alt="dev"/>
                         </div>
+                        <Text />
+                        
                     </div>
                 </div>
             </div>

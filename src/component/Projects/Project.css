@@ -28,3 +28,9 @@
 #arrLeft img{
     transform: rotate(180deg);
 }
+@media(max-device-width: 568px) {
+    .selector p{
+        font-size: 2.2vw;
+    }
+   
+}

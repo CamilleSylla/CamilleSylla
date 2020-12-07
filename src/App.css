@@ -98,11 +98,10 @@ button:hover {
 @media(max-device-width: 568px) {
   .layer {
     width: unset;
-    height: unset;
+    height: 100vh;
   }
   .titleContainer {
       position: unset;
-      height: 30vh;
   }
   .titleContainer h2 {
       font-size: 5vw;

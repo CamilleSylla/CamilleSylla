@@ -48,26 +48,6 @@
     margin-bottom: 1vh;
 }
 
-
-.card2 {
-    color: white;
-    font-family: 'Barlow Condensed', sans-serif;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.card2 h3 {
-    font-weight: 400;
-    font-size: 1.5vw;
-    letter-spacing: 0.3vw;
-    margin: 0;
-}
-.card2 img {
-    height: 6vh;
-    margin-bottom: 1vh;
-}
-
 .techSelect {
     display: flex;
     flex-direction: column;
@@ -84,4 +64,25 @@
 @keyframes updown {
     from {top: 20px;}
   to {top: 0px;}
+}
+
+@media(max-device-width: 568px) {
+    .techFront {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .techContainer img {
+        height: 4vh;
+        margin-bottom: 1vh;
+    }
+    .techContainer {
+        min-height: 40vh;
+    }
+    .stackMenu {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .stackMenu button {
+        font-size: 2.5vw;
+    }
 }

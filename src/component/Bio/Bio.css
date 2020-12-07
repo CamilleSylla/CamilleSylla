@@ -1,5 +1,3 @@
-
-
 .bioContainer {
     height: 100vh;
     width: 100vw;
@@ -10,4 +8,21 @@
 #scene2 {
     height: 50vh;
     opacity: 1;
+}
+
+@media(max-device-width: 568px) {
+    .bioContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+    }
+    #scene2 {
+        height: 20vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+   
 }
