@@ -37,7 +37,22 @@ const [mobileMenuClick, setMobileMenuClick] = useState(false)
         }
         
     }
-
+    
+    function Click () {
+        const top = document.getElementById('top');
+            top.style.transform = 'rotate(0deg)';
+            top.style.position= "static"
+            const middle = document.getElementById('middle')
+            middle.style.display = "initial"
+            const bottom = document.getElementById('bottom')
+            bottom.style.transform = 'rotate(0deg)'
+            bottom.style.position = "static"
+            const displayMenu = document.getElementById('navList')
+            displayMenu.style.display = "none"
+            const background = document.querySelector('.navContainer')
+            background.style.background = "transparent"
+            setMobileMenuClick(false)
+    }
     return (
         <div className="navContainer">
             <div id="menuHamburger" onClick={() => Cross()}>
@@ -46,19 +61,19 @@ const [mobileMenuClick, setMobileMenuClick] = useState(false)
                 <span id="bottom"></span>
             </div>
             <div id="navList">
-                <NavLink to="/" exact activeStyle={{color: "#A81549"}}>
+                <NavLink to="/" onClick={() => Click()} exact activeStyle={{color: "#A81549"}}>
                 01 - Home
                 </NavLink>
-                <NavLink to="/bio" exact activeStyle={{color: "#A81549"}}>
+                <NavLink to="/bio" onClick={() => Click()} exact activeStyle={{color: "#A81549"}}>
                 02 - Bio
                 </NavLink>
-                <NavLink to="/projects" exact activeStyle={{color: "#A81549"}}>
+                <NavLink to="/projects" onClick={() => Click()}  exact activeStyle={{color: "#A81549"}}>
                 03 - Projets
                 </NavLink>
-                <NavLink to="/technos" exact activeStyle={{color: "#A81549"}}>
+                <NavLink to="/technos"  onClick={() => Click()} exact activeStyle={{color: "#A81549"}}>
                 04 - Technos
                 </NavLink>
-                <NavLink to="/contact" exact activeStyle={{color: "#A81549"}}>
+                <NavLink to="/contact"  onClick={() => Click()} exact activeStyle={{color: "#A81549"}}>
                 05 - Contact
                 </NavLink>
             </div>
