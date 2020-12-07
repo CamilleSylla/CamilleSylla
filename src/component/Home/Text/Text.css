@@ -32,3 +32,24 @@
 .textContainer p {
     text-align: justify;
 }
+@media (max-device-width: 568px) {
+    .textContainer {
+        width: 50vw;
+    }
+    .textContainer span{
+        font-size: 8vw;
+    }
+    .textContainer h3 {
+        font-size: 12vw;
+    }
+    .textContainer h3 span {
+        font-size: 12vw;
+    }
+    .textContainer p {
+        font-size: 4vw;
+    }
+    .linkBtn {
+        margin: 0;
+        font-size: 4vw;
+    }
+}

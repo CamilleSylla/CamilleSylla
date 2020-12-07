@@ -1,7 +1,6 @@
 
 .titleBioContainer {
     display: flex;
-    height: 30vh;
     justify-content: center;
     align-items: center;
     flex-direction: column;

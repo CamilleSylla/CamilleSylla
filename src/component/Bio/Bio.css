@@ -7,11 +7,6 @@
     grid-template-columns: repeat(3, 1fr);
     width: 80%;
 }
-.titleContainer {
-    position: relative;
-    height: 10vh;
-    overflow: hidden;
-}
 #scene2 {
     height: 50vh;
     opacity: 1;

@@ -9,7 +9,6 @@
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  position: relative;
 }
 .appHome {
   height: 100vh;
@@ -65,4 +64,50 @@ button:hover {
   justify-content: center;
   align-items: center;
   background-color: rgba(0,0,0,0.6);
+}
+.titleContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: auto;
+  overflow: hidden;
+  flex-direction: column;
+  grid-column: span 4;
+  grid-row: 1;
+}
+.titleContainer h2 {
+  margin: 0;
+  color: white;
+  text-align: center;
+  font-family: 'Barlow Condensed', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.5vw;
+  font-weight: 200;
+}
+.titleContainer h1 {
+  margin: 0;
+  color: white;
+  text-align: center;
+  font-family: 'Barlow Condensed', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2vw;
+  font-weight: 400;
+  font-size: 5vw;
+}
+@media(max-device-width: 568px) {
+  .layer {
+    width: unset;
+    height: unset;
+  }
+  .titleContainer {
+      position: unset;
+      height: 30vh;
+  }
+  .titleContainer h2 {
+      font-size: 5vw;
+  }
+  .titleContainer h1 {
+      font-size: 10vw;
+  }
 }

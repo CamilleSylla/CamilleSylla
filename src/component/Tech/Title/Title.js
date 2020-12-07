@@ -2,8 +2,6 @@ import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/all";
 
-import './Title.css'
-
 export default function TechTitle () {
     let line1 = useRef(null)
     let line2 = useRef(null)

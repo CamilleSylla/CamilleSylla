@@ -58,7 +58,6 @@ export default function Home() {
                         <Text />
                         <div id="scene">
                             <img src={Dev} alt="dev"/>
-                            
                         </div>
                     </div>
                 </div>

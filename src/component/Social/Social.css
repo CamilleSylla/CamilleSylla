@@ -14,7 +14,7 @@
     border-bottom: 1px solid white;
 }
 .socialIcons {
-    width: 30%;
+    width: 30vw;
     display: flex;
     justify-content: space-evenly;
 }
@@ -22,4 +22,9 @@
 .socialContainer img {
     height: 3.5vh;
     cursor: pointer;
+}
+@media(max-device-width: 568px) {
+    .socialIcons {
+        width: 100vw;
+    }
 }

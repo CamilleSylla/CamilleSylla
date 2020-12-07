@@ -1,5 +1,4 @@
-import React, { useEffect, useRef } from 'react'
-import './Title.css';
+import React, { useEffect, useRef } from 'react';
 import { gsap } from "gsap";
 
 export default function Title () {
