@@ -17,7 +17,7 @@ export default function TitleContact () {
         })
     }, [line1, line2])
     return (
-        <div className="titleContact">
+        <div className="titleContainer">
             <h2 ref={el => line1 = el}>Discutons</h2>
             <h1 ref={el => line2 = el}>de votre projet</h1>
         </div>

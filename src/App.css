@@ -97,7 +97,7 @@ button:hover {
 }
 @media(max-device-width: 568px) {
   .layer {
-    width: unset;
+    width: 100vw;
     height: 100vh;
   }
   .titleContainer {

@@ -1,17 +1,7 @@
-.formcontainer {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    grid-column: span 4;
-}
-
 .formInputs {
-    width: 80%;
     display: flex;
-    justify-content: center;
-    align-items: center;
-
+    flex-direction: column;
+    margin-top: 5vh;
 }
 
 .formInputs input,
@@ -22,9 +12,20 @@ textarea {
     font-size: 1vw;
     font-family: 'Barlow Condensed', sans-serif;
     border-bottom: 2px solid white;
-
+    width: 25vw;
+}
+textarea {
+    height: 15vh;
+    margin-bottom: 5vh;
 }
 
 .formInputs input {
     height: 5vh;
+}
+@media(max-device-width: 568px) {
+    .formInputs input,
+textarea {
+    font-size: 2vh;
+    width: 50vw;
+}
 }

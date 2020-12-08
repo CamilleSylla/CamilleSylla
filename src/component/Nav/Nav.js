@@ -3,12 +3,12 @@ import { NavLink } from 'react-router-dom';
 import './Nav.css';
 
 export default function Nav() {
-const [mobileMenuClick, setMobileMenuClick] = useState(false)
-    function Cross () {
+    const [mobileMenuClick, setMobileMenuClick] = useState(false)
+    function Cross() {
         if (mobileMenuClick === false) {
             const top = document.getElementById('top');
             top.style.transform = 'rotate(45deg)';
-            top.style.position= "absolute"
+            top.style.position = "absolute"
             const middle = document.getElementById('middle')
             middle.style.display = "none"
             const bottom = document.getElementById('bottom')
@@ -23,7 +23,7 @@ const [mobileMenuClick, setMobileMenuClick] = useState(false)
         } else {
             const top = document.getElementById('top');
             top.style.transform = 'rotate(0deg)';
-            top.style.position= "static"
+            top.style.position = "static"
             const middle = document.getElementById('middle')
             middle.style.display = "initial"
             const bottom = document.getElementById('bottom')
@@ -35,13 +35,16 @@ const [mobileMenuClick, setMobileMenuClick] = useState(false)
             background.style.background = "transparent"
             setMobileMenuClick(false)
         }
-        
+
     }
-    
-    function Click () {
-        const top = document.getElementById('top');
+
+    function Click() {
+        const width = window.innerWidth
+        console.log(width);
+        if (width <= 538) {
+            const top = document.getElementById('top');
             top.style.transform = 'rotate(0deg)';
-            top.style.position= "static"
+            top.style.position = "static"
             const middle = document.getElementById('middle')
             middle.style.display = "initial"
             const bottom = document.getElementById('bottom')
@@ -52,6 +55,8 @@ const [mobileMenuClick, setMobileMenuClick] = useState(false)
             const background = document.querySelector('.navContainer')
             background.style.background = "transparent"
             setMobileMenuClick(false)
+        }
+
     }
     return (
         <div className="navContainer">
@@ -61,20 +66,20 @@ const [mobileMenuClick, setMobileMenuClick] = useState(false)
                 <span id="bottom"></span>
             </div>
             <div id="navList">
-                <NavLink to="/" onClick={() => Click()} exact activeStyle={{color: "#A81549"}}>
-                01 - Home
+                <NavLink to="/" onClick={() => Click()} exact activeStyle={{ color: "#A81549" }}>
+                    01 - Home
                 </NavLink>
-                <NavLink to="/bio" onClick={() => Click()} exact activeStyle={{color: "#A81549"}}>
-                02 - Bio
+                <NavLink to="/bio" onClick={() => Click()} exact activeStyle={{ color: "#A81549" }}>
+                    02 - Bio
                 </NavLink>
-                <NavLink to="/projects" onClick={() => Click()}  exact activeStyle={{color: "#A81549"}}>
-                03 - Projets
+                <NavLink to="/projects" onClick={() => Click()} exact activeStyle={{ color: "#A81549" }}>
+                    03 - Projets
                 </NavLink>
-                <NavLink to="/technos"  onClick={() => Click()} exact activeStyle={{color: "#A81549"}}>
-                04 - Technos
+                <NavLink to="/technos" onClick={() => Click()} exact activeStyle={{ color: "#A81549" }}>
+                    04 - Technos
                 </NavLink>
-                <NavLink to="/contact"  onClick={() => Click()} exact activeStyle={{color: "#A81549"}}>
-                05 - Contact
+                <NavLink to="/contact" onClick={() => Click()} exact activeStyle={{ color: "#A81549" }}>
+                    05 - Contact
                 </NavLink>
             </div>
         </div>
