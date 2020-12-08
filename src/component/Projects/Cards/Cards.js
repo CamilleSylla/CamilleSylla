@@ -13,11 +13,11 @@ export default function Cards({pro}) {
 
                 return (
                     <div className="projetViews">
-                        <img src={details.image} alt="Folio" />
+                        <img src={details.image} alt="Folio" onClick={() => window.open(`${details.link}`)}/>
                         <p className="proInfo">Nom du site :  <span>{" " + details.name}</span></p>
                         <p className="proInfo">Creation du projet :  <span>{" " + details.start}</span></p>
                         <p className="proInfo">Temps de conception :  <span>{" " + details.duration}</span></p>
-                        <p className="proInfo">Type de projet :  <span>{" " + details.duration}</span></p>
+                        <p className="proInfo">Type de projet :  <span>{" " + details.type}</span></p>
                     </div>
                 )
             })}
@@ -27,10 +27,10 @@ export default function Cards({pro}) {
                 return (
                     <div className="projectDetails">
                         <p className="proInfo">But du projet : <br />  <span>{" " + details.goal}</span></p>
-                        <p className="proInfo">Difficulté rencontré : <br />  <span>{" " + details.probleme}</span></p>
+                        <p className="proInfo">Difficulté rencontré : <br />  <span>{" " + details.problem}</span></p>
                         <p className="proInfo">Technologie : </p>
                         <div className="projectTechnos">
-                            {details.technologie.map((tech, i) => {
+                            {details.tech.map((tech, i) => {
                                 return <td >{tech}</td>
                             })} </div>
                     </div>
@@ -45,7 +45,9 @@ export default function Cards({pro}) {
                             <p>Oui</p>
                             <img src={Check} alt="oui" />
                             <p> lien :</p>
-                            <a>{done.linkF}</a>
+                            <a onClick={() => window.open(`${done.link}`)}>{done.link}</a>
+                            <p> Git :</p>
+                            <a onClick={() => window.open(`${done.git}`)}>{done.git}</a>
                         </div>
                     )
 
@@ -55,7 +57,9 @@ export default function Cards({pro}) {
                             <p> Ce projet est encore en cours de construction</p>
                             <img className="projetMarteau" src={Mar} alt="Marteau" />
                             <p> lien :</p>
-                            <a>{done.linkF}</a>
+                            <a onClick={() => window.open(`${done.link}`)}>{done.link}</a>
+                            <p> Git :</p>
+                            <a onClick={() => window.open(`${done.git}`)}>{done.git}</a>
                         </div>
 
                     )
