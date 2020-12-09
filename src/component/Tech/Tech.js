@@ -32,9 +32,6 @@ export default function Tech() {
         ease:"anticipate",
         duration: .5
     }
-    const pageStyle = {
-        pposition: "absolute"
-    }
 
     return (
         <motion.div
@@ -42,8 +39,7 @@ export default function Tech() {
             initial="in"
             animate="ini"
             variants={pageVariant}
-            transition={pageTransition}
-            style={pageStyle}>
+            transition={pageTransition}>
             <div className="appTech">
                 <div className="layer">
                     <TechTitle />

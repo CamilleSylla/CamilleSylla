@@ -9,6 +9,13 @@
     top: 0;
     right: 0;
     z-index: 2;
+    transition: all 0.3s ease-in-out;
+    opacity: 0.4;
+  }
+  .navContainer:hover {
+    opacity: 1;
+    background-color: #038c96a1;
+    padding-left: 5%;
   }
   .navContainer a {
     color: white;
@@ -38,6 +45,7 @@
       right: unset;
       bottom: 0;
       position: fixed;
+      opacity: 1;
     }
     #navList{
       width: 100vw;

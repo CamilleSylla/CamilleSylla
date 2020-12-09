@@ -2,6 +2,7 @@ import React, { useEffect} from 'react'
 import './Text.css'
 import { gsap } from "gsap";
 import CountUp from 'react-countup';
+import { Link } from 'react-router-dom';
 
 export default function Text () {
     
@@ -72,7 +73,8 @@ export default function Text () {
             
             <p id="desc">Bonjour, Je m'appelle Camille Sylla.
                  Je suis un developpeur utilisant ayant pour stack favoris le " MERN (MongoDB, Express.js, React.js et Node.js) Stack". Je suis developpeur freelance pouvant intervenir dans les region des Haut-de-France, Ile de France et Grand-Ouest mais aussi en remote si vous n'avez pas ou pas encore de locaux.</p>
-            <button className="linkBtn"> Ma Bio</button>
+            <Link to="/bio">Ma Bio</Link>
+            
         </div>
     )
 }

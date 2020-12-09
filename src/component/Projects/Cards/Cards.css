@@ -1,4 +1,5 @@
 .projectCards {
+    margin-top: 5vh;
     width: 80vw;
     display: grid;
     max-height: 48vh;
@@ -7,13 +8,18 @@
     column-gap: 2%;
     overflow-x: hidden;
     overflow-y: scroll;
-    scrollbar-color: rgba(30, 4, 31, 0.5) transparent;
     color: white;
     font-family: 'Barlow Condensed', sans-serif;
     transition: all 0.5s ease-in;
-}
-.projectCards:hover {
     background-color: rgba(0, 0, 0, 0.5);
+}
+.projectCards::-webkit-scrollbar {
+    background-color: transparent;
+    width: 5px;
+    float: left;
+}
+.projectCards::-webkit-scrollbar-thumb {
+    background: #A81549; 
 }
 .projetViews img{
     width: 100%;
@@ -29,9 +35,10 @@
     margin-left: 2vw;
 }
 .projectTechnos {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    font-size: 1.2vw;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 1vh;
 }
 .projectDone {
     display: flex;
@@ -73,6 +80,7 @@
     }
     .proInfo {
         font-size: 2.5vw;
+        
     }
     .projectTechnos {
         font-size: 2vw;

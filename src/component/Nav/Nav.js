@@ -20,7 +20,7 @@ export default function Nav() {
             const background = document.querySelector('.navContainer')
             
             background.style.height = "100vh"
-            background.style.background = "#008080"
+            background.style.background = "#038c96"
             
             setMobileMenuClick(true)
 

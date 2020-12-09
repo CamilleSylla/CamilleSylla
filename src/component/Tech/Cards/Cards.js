@@ -22,20 +22,6 @@ import { motion } from 'framer-motion';
 
 export default function Cards({ stack }) {
 
-    const pageTransition = {
-        ini: {
-            y: 0,
-            x: 0
-        },
-        out: {
-            y: "100vw"
-        },
-        in: {
-            y: "-100v"
-        }
-
-    }
-
     function Stack() {
         if (stack.stack === "back") {
             return (

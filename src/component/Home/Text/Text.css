@@ -32,6 +32,28 @@
 .textContainer p {
     text-align: justify;
 }
+.textContainer a {
+    background-color: transparent;
+  width: 60%;
+  height: 5vh;
+  color: white;
+  border-radius: 20px;
+  box-shadow: none;
+  border-color: white;
+  font-family: 'Barlow Condensed', sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  border: 3px solid white;
+  letter-spacing: 0.2vw;
+  font-size: 1.3vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all ease-out .5s;
+  margin-right: 2vw;
+}
 @media (max-device-width: 568px) {
     .textContainer {
         width: 50vw;
@@ -51,5 +73,8 @@
     .linkBtn {
         margin: 0;
         font-size: 4vw;
+    }
+    .textContainer a {
+        font-size: 2vh;
     }
 }

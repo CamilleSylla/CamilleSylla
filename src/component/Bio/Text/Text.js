@@ -2,6 +2,7 @@ import React, { useEffect} from 'react'
 import './Text.css'
 import { gsap } from "gsap";
 import CountUp from 'react-countup';
+import { Link } from 'react-router-dom';
 
 export default function TextBio () {
 
@@ -57,7 +58,7 @@ export default function TextBio () {
                 et c'est la raison de spécialisation. Je suis donc motivé pour rejoindre 
                 vos équipes de développement et vous aidé a baitir vos projet... 
             </p>
-            <button className="linkBtn"> Me contacter</button>
+            <Link to="/contact">Me Contacter</Link>
         </div>
     )
 }
