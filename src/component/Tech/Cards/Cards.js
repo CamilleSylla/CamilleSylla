@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './Cards.css';
 
 //front-end
@@ -17,11 +17,11 @@ import Jest from '../../../assets/jest.svg'
 import Exp from '../../../assets/express.svg'
 import Jwt from '../../../assets/jwt.svg'
 import Wp from '../../../assets/WP.svg'
-import Up from '../../../assets/up.svg'
-import { motion } from 'framer-motion';
 
 export default function Cards({ stack }) {
 
+
+    
     function Stack() {
         if (stack.stack === "back") {
             return (
@@ -62,7 +62,7 @@ export default function Cards({ stack }) {
                 </div>
             )
 
-        } else if (stack.stack === "front") {
+        } else {
             return (
                 <div className="techSplice">
                     <div className="techFront">
@@ -93,19 +93,13 @@ export default function Cards({ stack }) {
                     </div>
                 </div>
             )
-        } else {
-            return (
-                <div className="techSelect">
-                    <img src={Up} alt="up arrow"/>
-                    <p id="select"> Veuillez selectionnez une catégorie</p>
-                </div>
-
-            ) 
-        }
+        } 
     }
+    useEffect(() => {
+        Stack()
+    },[stack])
     return (
         <div className="techContainer">
-
             {Stack()}
         </div>
     )

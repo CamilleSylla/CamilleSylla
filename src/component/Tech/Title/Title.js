@@ -17,7 +17,7 @@ export default function TechTitle () {
                 start: "20px 80%",
             },
             delay:.3,
-            esae: "power3.out",
+            ease: "power3.out",
             y: 300,
             stagger: {
                 amount:0.15

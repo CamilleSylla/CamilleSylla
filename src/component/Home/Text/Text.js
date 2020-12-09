@@ -25,16 +25,6 @@ export default function Text () {
                 amount:1
             }
         })
-        gsap.from(".linkBtn", 1.2, {
-            delay: 1.5,
-            ease:"back",
-            width: "0%",
-            rotateX: 1800,
-            color: "transparent",
-            stagger: {
-                amount:1
-            }
-        })
     })
     return (
         
