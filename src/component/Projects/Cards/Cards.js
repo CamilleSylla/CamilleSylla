@@ -27,8 +27,8 @@ export default function Cards({pro}) {
                 return (
                     <div className="projectDetails">
                         <p className="proInfo">But du projet : <br />  <span>{" " + details.goal}</span></p>
-                        <p className="proInfo">Difficulté rencontré : <br />  <span>{" " + details.problem}</span></p>
-                        <p className="proInfo">Technologie : </p>
+                        <p className="proInfo">Difficultés rencontrées : <br />  <span>{" " + details.problem}</span></p>
+                        <p className="proInfo">Technologies : </p>
                         <div className="projectTechnos">
                             {details.tech.map((tech, i) => {
                                 return <td >{tech}</td>

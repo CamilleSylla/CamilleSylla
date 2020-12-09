@@ -23,6 +23,14 @@
 }
 .projetViews img{
     width: 100%;
+    height: 40vh;
+}
+.proInfo {
+    color: #A81549;
+    font-weight: 500;
+}
+.proInfo span{
+    color: white;
 }
 .projetViews p {
     width: 100%;
@@ -85,7 +93,11 @@
     .projectTechnos {
         font-size: 2vw;
     }
-    .projectDone {
-        font-size: 2.5vw;
+    .projectDone p{
+        font-size: 2vw;
+    }
+    .projectDone a{
+        font-size: 2vw;
+        color: teal;
     }
 }

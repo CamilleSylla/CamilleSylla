@@ -38,10 +38,12 @@ export default function Project() {
     function minus  () {
         let acc = Number(project.id);
         let long = allProject.length;
-        if (acc < long) {
-            setProject({ ...project, id: `${long}` })
+        if (acc <= long) {
+            setProject({ ...project, id: "1" })
+            console.log(project);
         } else {
             setProject({ ...project, id: `${acc -= 1}` })
+            console.log(project);
         }
     }
 

@@ -61,8 +61,7 @@ export default function Text () {
             <span>s</span>
             </div>
             
-            <p id="desc">Bonjour, Je m'appelle Camille Sylla.
-                 Je suis un developpeur utilisant ayant pour stack favoris le " MERN (MongoDB, Express.js, React.js et Node.js) Stack". Je suis developpeur freelance pouvant intervenir dans les region des Haut-de-France, Ile de France et Grand-Ouest mais aussi en remote si vous n'avez pas ou pas encore de locaux.</p>
+            <p id="desc">Bonjour, Je m'appelle Camille Sylla, développeur utilisant principalement le " MERN (MongoDb, Express Js, React js et Node js) Stack". Je suis un freelance pouvant intervenir dans les régions des Haut-de-France, Île de France et Grand Ouest mais aussi en remote.</p>
             <Link to="/bio">Ma Bio</Link>
             
         </div>
