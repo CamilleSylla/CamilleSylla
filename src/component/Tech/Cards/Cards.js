@@ -61,8 +61,7 @@ export default function Cards({ stack }) {
                     </div>
                 </div>
             )
-
-        } else {
+        } else if (stack.stack === "front") {
             return (
                 <div className="techSplice">
                     <div className="techFront">
@@ -93,7 +92,13 @@ export default function Cards({ stack }) {
                     </div>
                 </div>
             )
-        } 
+        } else {
+            return (
+                <div className="techSelect">
+                    <p id="select"> Veuillez selectionnez une catégorie</p>
+                </div>
+            ) 
+        }
     }
     useEffect(() => {
         Stack()
