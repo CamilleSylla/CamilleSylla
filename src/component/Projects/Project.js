@@ -3,9 +3,6 @@ import React, { useEffect, useState } from 'react';
 import Cards from './Cards/Cards';
 import './Project.css';
 import Title from './Title/Title';
-import Folio from '../../assets/Folio.jpg'
-import Ecom from '../../assets/ecom.jpg'
-
 import Arr from '../../assets/Rarrow.svg';
 import Axios from 'axios';
 

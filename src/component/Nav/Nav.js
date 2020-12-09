@@ -1,3 +1,4 @@
+import { transform } from 'framer-motion';
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import './Nav.css';
@@ -17,7 +18,10 @@ export default function Nav() {
             const menu = document.getElementById('navList')
             menu.style.display = "flex"
             const background = document.querySelector('.navContainer')
+            
+            background.style.height = "100vh"
             background.style.background = "#008080"
+            
             setMobileMenuClick(true)
 
         } else {
@@ -32,6 +36,7 @@ export default function Nav() {
             const displayMenu = document.getElementById('navList')
             displayMenu.style.display = "none"
             const background = document.querySelector('.navContainer')
+            background.style.height = "10vh"
             background.style.background = "transparent"
             setMobileMenuClick(false)
         }
@@ -54,6 +59,7 @@ export default function Nav() {
             displayMenu.style.display = "none"
             const background = document.querySelector('.navContainer')
             background.style.background = "transparent"
+            background.style.height = "10vh"
             setMobileMenuClick(false)
         }
 

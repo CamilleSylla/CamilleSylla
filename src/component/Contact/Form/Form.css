@@ -1,7 +1,16 @@
 .formInputs {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin-top: 5vh;
+}
+.input-fields {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw; 
 }
 
 .formInputs input,
@@ -18,7 +27,6 @@ textarea {
     height: 15vh;
     margin-bottom: 5vh;
 }
-
 .formInputs input {
     height: 5vh;
 }

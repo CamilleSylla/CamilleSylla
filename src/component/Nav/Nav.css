@@ -33,7 +33,7 @@
   @media(max-device-width: 568px) {
     .navContainer {
       width: 100vw;
-      height: 30vh;
+      height: 10vh;
       top: unset;
       right: unset;
       bottom: 0;
@@ -41,9 +41,9 @@
     }
     #navList{
       width: 100vw;
+      height: 30vh;
       position: absolute;
       margin-bottom: 10vh;
-      justify-content: space-between;
       display: none;
     }
     .navContainer a {
