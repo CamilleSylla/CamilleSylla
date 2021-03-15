@@ -32,7 +32,10 @@ I also enjoy UX and UI design and find inspiration in the best worldwide website
 <div style="display: flex, justify-content: space-evenly, width: 100%">
   <img src="https://github.com/CamilleSylla/CamilleSylla/blob/main/Demetis.gif" width="256"/>
   </div>
+  
 ###Infos
+
+
 - 🔭 I’m currently working on my own compagny 
 - 🌱 I’m currently learning Three.js and couple of other stuff 
 - 💬 Ask me about whatever you want 
