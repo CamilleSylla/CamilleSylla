@@ -21,13 +21,17 @@ I also enjoy UX and UI design and find inspiration in the best worldwide website
 <img src="https://github.com/CamilleSylla/CamilleSylla/blob/main/MenuStuff.gif" width="256"/>
   </div>
 
-#### Done
+#### Quick Work
 <div style="display: flex, justify-content: space-evenly, width: 100%">
 <img src="https://github.com/CamilleSylla/CamilleSylla/blob/main/ID%20Vid%C3%A9o%20Game.gif" width="256"/>
 <img src="https://github.com/CamilleSylla/CamilleSylla/blob/main/Glitch.gif" width="256"/>
+  <img src="https://github.com/CamilleSylla/CamilleSylla/blob/main/Juice.gif" width="256"/>
+  </div>
+  
+#### Done
+<div style="display: flex, justify-content: space-evenly, width: 100%">
   <img src="https://github.com/CamilleSylla/CamilleSylla/blob/main/Demetis.gif" width="256"/>
   </div>
-
 ###Infos
 - 🔭 I’m currently working on my own compagny 
 - 🌱 I’m currently learning Three.js and couple of other stuff 
