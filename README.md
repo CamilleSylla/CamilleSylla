@@ -14,8 +14,10 @@ I also enjoy UX and UI design and find inspiration in the best worldwide website
 * 👨🏾‍💻 Node / Express 
 * 📂 MongoDB / Firebase Storage
 
+## Exemples of Work
 
-Skills: REACT / JS / HTML / CSS / EXPRESS / MONGODB
+
+
 
 - 🔭 I’m currently working on my own compagny 
 - 🌱 I’m currently learning Three.js and couple of other stuff 
