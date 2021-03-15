@@ -10,9 +10,10 @@ I also enjoy UX and UI design and find inspiration in the best worldwide website
 
 ## Skills and Experience
 * ⚛ React
-* 🖼 HTML / CSS / Javscript
+* 🖼 HTML / CSS (SASS) / Javscript
 * 👨🏾‍💻 Node / Express 
 * 📂 MongoDB / Firebase Storage
+* 🎮 ThreeJS
 
 ## Exemples of Work
 #### In Progress 
