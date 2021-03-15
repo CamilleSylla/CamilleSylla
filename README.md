@@ -1,4 +1,4 @@
-![I am Web Developer](https://cap.img.pmdstatic.net/fit/http.3A.2F.2Fprd2-bone-image.2Es3-website-eu-west-1.2Eamazonaws.2Ecom.2Fcap.2F2020.2F10.2F14.2F84106a3d-6ec6-428a-82ff-0bda6147dc90.2Ejpeg/750x375/background-color/ffffff/quality/70/espace-la-france-va-t-elle-echouer-a-profiter-de-la-revolution-du-new-space-1383156.jpg)
+![I am Web Developer](https://github.com/CamilleSylla/CamilleSylla/blob/main/bc.png)
 
 ### Hi there 👋, I'm Camille Sylla
 #### I am Web Developer
@@ -28,9 +28,7 @@ I also enjoy UX and UI design and find inspiration in the best worldwide website
   <img src="https://github.com/CamilleSylla/CamilleSylla/blob/main/Demetis.gif" width="256"/>
   </div>
 
-
-
-
+###Infos
 - 🔭 I’m currently working on my own compagny 
 - 🌱 I’m currently learning Three.js and couple of other stuff 
 - 💬 Ask me about whatever you want 
